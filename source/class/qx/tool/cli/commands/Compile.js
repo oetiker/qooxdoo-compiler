@@ -671,7 +671,7 @@ qx.Class.define("qx.tool.cli.commands.Compile", {
         if (typeof targetConfig.typescript == "string") {
           maker.set({ outputTypescript: true, outputTypescriptTo: targetConfig.typescript });
         } else if (typeof targetConfig.typescript == "boolean") {
-          maker.set({ outputTypescript: true });
+          maker.set({ outputTypescript: targetConfig.typescript });
         }
         if (this.argv["typescript"]) {
           maker.set({ outputTypescript: true });
